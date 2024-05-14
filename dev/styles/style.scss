@@ -198,18 +198,22 @@ textarea.form-control {
 	@include media-breakpoint-down(xl) {
 		padding-left: 40px;
 	}
+}
 
-	a {
-		font-size: 30px;
-		color: $white;
-		font-weight: bold;
-		line-height: 1;
-		font-family: $font-family-serif;
+.head-logo {
+	font-size: 35px;
+	color: $white;
+	font-weight: bold;
+	line-height: 1;
+	font-family: $font-family-serif;
 
-		@include media-breakpoint-down(md) {
-			font-size: 27px;
-		}
+	@include media-breakpoint-down(md) {
+		font-size: 27px;
 	}
+}
+
+.scrolled .head-logo {
+	font-size: 25px;
 }
 
 .site-navbar {
@@ -345,7 +349,7 @@ textarea.form-control {
 	min-height: 700px;
 
 	.heading {
-		font-size: 80px;
+		font-size: 85px;
 		font-family: $font-family-serif;
 		color: $white;
 		line-height: 1;
@@ -1751,7 +1755,7 @@ textarea.form-control {
 }
 
 .custom-caption {
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: .2em;
 }
 
@@ -1789,8 +1793,8 @@ textarea.form-control {
 	right: -100px;
 
 	img {
-		max-width: 250px;
-		border-radius: 50%;
+		max-width: 400px;
+		border-radius: 40%;
 		border: 10px solid $bg-light;
 	}
 
