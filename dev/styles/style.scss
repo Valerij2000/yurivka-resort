@@ -307,6 +307,12 @@ textarea.form-control {
 }
 
 .site-hero {
+	@include media-breakpoint-down(md) {
+		background-position: 65% 0px;
+	}
+}
+
+.site-hero {
 	background-size: cover;
 	height: 100vh;
 	min-height: 700px;
@@ -1926,5 +1932,12 @@ textarea.form-control {
 
 			}
 		}
+	}
+}
+
+.section-phone-overlay {
+	@include media-breakpoint-down(md) {
+		background-position: 65% 0px;
+		padding: 7em 0;
 	}
 }
