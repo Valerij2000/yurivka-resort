@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const form = document.querySelector('#telegram-form');
-
   const TOKEN = '7081774459:AAEDBWQPhiX6xV89RMvn1m6Xe_MAuNrpt3Q';
   const CHAT_ID = '-1002211069743';
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -36,6 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         text: message
       })
       .then((data) => {
+        $('#modal-success').modal('show');
         this.phone.value = '';
         this.checkIn.value = '';
         this.checkOut.value = '';
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         this.children.value = '0';
       })
       .catch((err) => {
+        $('#modal-fail').modal('show');
         console.log(err);
       })
   })

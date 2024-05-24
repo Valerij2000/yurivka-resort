@@ -356,6 +356,46 @@
     </div>
   </footer>
 
+  <!-- Modal Scuccess -->
+  <div class="modal" tabindex="-1" role="dialog" id="modal-success">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Форма отправлена успешно!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Мы свяжемся с вами для уточнения деталей бронирования</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Fail -->
+  <div class="modal" tabindex="-1" role="dialog" id="modal-fail">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ууупс...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Ваша заявка не была отправлена, проверьте Интернет соединения и повторите попытку</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="res/lib/jquery-3.3.1.min.js"></script>
   <script src="res/lib/jquery-migrate-3.0.1.min.js"></script>
   <script src="res/lib/popper.min.js"></script>
