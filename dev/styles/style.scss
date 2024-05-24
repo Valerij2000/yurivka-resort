@@ -1,3 +1,5 @@
+// * fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 // * libs
 @import 'libs/bootstrap.min';
 @import 'libs/animate';
@@ -14,8 +16,7 @@
 $font-family-sans-serif: 'Roboto',
 arial,
 sans-serif;
-$font-family-serif: 'Playfair Display',
-times,
+$font-family-serif: 'Roboto',
 serif;
 $bg-light : #f2f4fb;
 
@@ -208,12 +209,16 @@ textarea.form-control {
 	font-family: $font-family-serif;
 
 	@include media-breakpoint-down(md) {
-		font-size: 27px;
+		font-size: 22px;
 	}
 }
 
 .scrolled .head-logo {
 	font-size: 25px;
+}
+
+.menu-icon {
+	max-width: 35px;
 }
 
 .site-navbar {
@@ -241,6 +246,10 @@ textarea.form-control {
 					font-size: 40px;
 					padding: 5px 10px;
 					position: relative;
+
+					@include media-breakpoint-down(xl) {
+						font-size: 26px;
+					}
 
 					&:hover {
 						&:before {
@@ -981,6 +990,8 @@ textarea.form-control {
 }
 
 .footer-section {
+	padding-top: 0;
+	padding-bottom: 0;
 	background: lighten($black, 10%);
 	color: $white;
 
@@ -1383,7 +1394,7 @@ textarea.form-control {
 
 	.form-control {
 		position: relative;
-		padding-right: 40px;
+		padding-right: 15px;
 		box-shadow: none !important;
 		color: lighten($black, 65%);
 	}
@@ -1413,7 +1424,7 @@ textarea.form-control {
 
 		.form-control {
 			position: relative;
-			padding-right: 40px;
+			padding-right: 15px;
 			box-shadow: none !important;
 			color: lighten($black, 65%);
 		}
