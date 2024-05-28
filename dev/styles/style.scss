@@ -1941,3 +1941,8 @@ textarea.form-control {
 		padding: 7em 0;
 	}
 }
+
+.visible-hidden {
+	position: fixed;
+	transform: scale(0);
+}
